@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1rem;
+    border-left: 0.2rem solid #f7f8fd;
+}
+
+#title {
+    font-size: 1.5rem;
+}
+
+#date {
+    width: max-content;
+    margin-left: auto;
+}
+
+#status {
+    padding: 0.5rem 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f7f8fd;
+}
+
+article {
+    display: flex;
+    background-color: white;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    
+}
+
+article > img {
+    padding: 0.5rem;
+    height: 5rem;
+}
+
+article > div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+article > div > div {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+footer {
+    display: block;
+}
+
+footer > div {
+    padding: 2rem 0;
+}
+
+.big-text {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+}
+
+input, select {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 0.2rem;
+    padding: 0.3rem;
+}
+
+th, tr, td {
+    padding: 1rem;
+}
+
+th {
+    border-bottom: 0.2rem solid #f7f8fd;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}

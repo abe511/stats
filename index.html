@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Covid19</title>
+</head>
+<body>
+    <header>
+        <p id="title">Coronavirus(COVID-19)</p>
+        <input id="date" type="date" value="" min="2020-01-22" max="">
+        <p id="status">Updated <span id="update"></span></p>
+    </header>
+    <main>
+        <article id="cases">
+            <img id="cases-img" src="./assets/img/covid_ko.png" alt="covid 19">
+            <div>
+            <p>Coronavirus Cases</p>
+                <div>
+                    <span class="big-text" id="cases-data"></span>
+                    <span id="cases-diff"></span>
+                </div>
+            </div>
+        </article>
+        <article id="recovered">
+            <img id="recovered-img" src="./assets/img/covid_ok.png" alt="">
+            <div>    
+            <p>Total Recovered</p>
+                <div>
+                    <span class="big-text" id="recovered-data"></span>
+                    <span id="recovered-diff"></span>
+                </div>
+            </div>
+        </article>
+        <article id="death">
+            <img id="death-img" src="./assets/img/covid_ko.png" alt="">
+            <div>
+            <p>Total Deaths</p>
+                <div>
+                    <span class="big-text" id="death-data"></span>
+                    <span id="death-diff"></span>
+                </div>
+            </div>
+        </article>
+        <article id="active">
+            <img id="active-img" src="./assets/img/covid_ko.png" alt="">
+            <div>
+            <p>Active Cases</p>
+                <div>
+                    <span class="big-text" id="active-data"></span>
+                    <span id="active-diff"></span>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <span>Choose a region</span>
+            <select name="" id="regions"></select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th id="region">Region</th>
+                    <th id="total-cases">Total Cases</th>
+                    <th id="new-cases">New Cases</th>
+                    <th id="total-deaths">Total Deaths</th>
+                    <th id="death-rate">Deaths %</th>
+                    <th id="new-deaths">New Deaths</th>
+                    <th id="total-recovered">Total Recovered</th>
+                    <th id="recovered">Recovered %</th>
+                    <th id="active-cases">Active Cases</th>
+                </tr>
+            </thead>
+            <tbody id="table-data"></tbody>
+        </table>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
